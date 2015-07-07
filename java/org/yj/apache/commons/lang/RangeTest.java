@@ -1,4 +1,4 @@
-package org.yj.apache.lang;
+package org.yj.apache.commons.lang;
 
 import org.apache.commons.lang3.Range;
 import org.junit.Test;
@@ -29,9 +29,19 @@ public class RangeTest {
         }
 
         public int compareTo(Item item) {
-            if(id == item.id)
+            if(item.equals(this))
                 return 0;
             return id < item.id ? -1 : 1;
+        }
+
+        public boolean equals(Object o){
+            if(o == null) return false;
+            if(o instanceof Item) {
+                if (o == this) return true;
+                Item i = (Item) o;
+                return id == i.id;
+            }else
+                return false;
         }
 
         @Override

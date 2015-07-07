@@ -98,7 +98,8 @@ public class SerializeTest {
         } catch (IOException e) {
             e.printStackTrace();
             try {
-                oos.close();
+                if(oos != null)
+                    oos.close();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -114,7 +115,8 @@ public class SerializeTest {
         } catch (IOException e) {
             e.printStackTrace();
             try {
-                ois.close();
+                if(ois != null)
+                    ois.close();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }

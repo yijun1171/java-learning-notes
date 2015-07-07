@@ -1,4 +1,4 @@
-package org.yj.apache.lang;
+package org.yj.apache.commons.lang;
 
 import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.EqualsBuilder;
