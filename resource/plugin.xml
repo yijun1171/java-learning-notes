@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+    <plugin>
+        <version>1.0</version>
+        <name>defaultPlugin</name>
+        <path>D:/default.jar</path>
+        <className>org.yj.plugin.test.Default</className>
+        <type>class</type>
+    </plugin>
+</plugins>
