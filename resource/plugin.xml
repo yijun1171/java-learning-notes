@@ -3,8 +3,16 @@
     <plugin>
         <version>1.0</version>
         <name>defaultPlugin</name>
-        <path>D:/default.jar</path>
-        <className>org.yj.plugin.test.Default</className>
+        <path>D:/java-test-1.0-SNAPSHOT.jar</path>
+        <className>org.yj.plugin.impl.DefaultPlugin</className>
+        <type>class</type>
+    </plugin>
+
+    <plugin>
+        <version>1.0</version>
+        <name>defaultPlugin</name>
+        <path>D:/java-test-1.0-SNAPSHOT.jar</path>
+        <className>org.yj.plugin.impl.SecondPlugin</className>
         <type>class</type>
     </plugin>
 </plugins>

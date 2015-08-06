@@ -3,7 +3,10 @@ package org.yj.plugin;
 import org.yj.plugin.config.PluginConfig;
 import org.yj.plugin.config.PluginConfigContext;
 
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by yijun.yj on 2015/8/5.
@@ -14,12 +17,12 @@ public abstract class PluginManager {
     /**
      * 元信息上下文
      */
-    private PluginConfigContext context;
+    protected PluginConfigContext context;
 
     /**
      * 已加载的插件
      */
-    private List<Plugin> plugins;
+    protected Map<String,Plugin> plugins;
 
     /**
      * 从插件注册上下文加载插件
@@ -29,7 +32,11 @@ public abstract class PluginManager {
     /**
      * 初始化
      */
-    public abstract void init();
+    public void init(){
+        context = new PluginConfigContext();
+        context.init();
+        plugins = new HashMap();
+    }
 
     /**
      * 获取已加载的插件
@@ -37,4 +44,6 @@ public abstract class PluginManager {
      * @return
      */
     public abstract Plugin getPlugin(PluginConfig config);
+
+    public abstract List<Plugin> getPlugins();
 }

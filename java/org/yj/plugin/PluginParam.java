@@ -6,6 +6,6 @@ package org.yj.plugin;
  */
 public interface PluginParam {
 
-    public Object getValue(String key);
+    public Object getValue(Object key);
 
 }

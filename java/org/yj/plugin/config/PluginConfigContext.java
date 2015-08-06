@@ -109,4 +109,8 @@ public class PluginConfigContext {
         pluginConfigs.remove(config);
     }
 
+    public List<PluginConfig> getConfigs(){
+        return pluginConfigs;
+    }
+
 }

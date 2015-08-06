@@ -1,5 +1,6 @@
 package org.yj.plugin.runtime;
 
+import org.yj.plugin.Plugin;
 import org.yj.plugin.PluginParam;
 
 import java.lang.reflect.Method;
@@ -10,11 +11,8 @@ import java.lang.reflect.Method;
  */
 public abstract class PluginWorker {
 
-    private Method execute;
 
-    private Class<?> classObject;
-
-    private Object targetObject;
+    private Plugin plugin;
 
     public abstract int init();
 

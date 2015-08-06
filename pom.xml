@@ -6,7 +6,7 @@
     <groupId>com.taobao.yj</groupId>
     <artifactId>java-test</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
